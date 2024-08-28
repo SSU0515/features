@@ -27,7 +27,7 @@ export const data = [
     id: 5,
     title: "5",
     src: "https://i.ibb.co/VLddLvD/2024-08-27-164404.png",
-    url: "https://www.braindeck.net/wp-content/uploads/2024/08/wife_fight_mydemon.mp4_translated-1-1.mp4",
+    url: "https://www.braindeck.net/wp-content/uploads/2024/08/wife_fight_mydemon.mp4.mp4",
   },
   {
     id: 6,
