@@ -12,24 +12,6 @@ export const data = [
     url: "https://www.braindeck.net/wp-content/uploads/2024/08/XR-Concert-COLORS-%EC%97%90%EC%9D%BC%EB%A6%AC-%EB%B3%B4%EC%97%AC%EC%A4%84%EA%B2%8C-2.mp4",
   },
   {
-    id: 3,
-    title: "3",
-    src: "https://i.ibb.co/LpFhT10/2024-08-27-163952.png",
-    url: "https://www.braindeck.net/wp-content/uploads/2024/08/EP05-240529-From-DI-synthesis2.mp4",
-  },
-  {
-    id: 4,
-    title: "4",
-    src: "https://i.ibb.co/dDSyTs5/2024-08-27-164243.png",
-    url: "https://www.braindeck.net/wp-content/uploads/2024/08/sxsw-4-1_1080p.mp4",
-  },
-  {
-    id: 5,
-    title: "5",
-    src: "https://i.ibb.co/VLddLvD/2024-08-27-164404.png",
-    url: "https://www.braindeck.net/wp-content/uploads/2024/08/wife_fight_mydemon.mp4.mp4",
-  },
-  {
     id: 6,
     title: "6",
     src: "https://i.ibb.co/fF1SL8q/2024-08-27-164513.png",

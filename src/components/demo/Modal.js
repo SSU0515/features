@@ -19,7 +19,7 @@ const ModalContent = styled.div`
   padding: 20px;
   border-radius: 10px;
   width: 60%;
-  height: 90%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,14 @@ const ModalContent = styled.div`
   video {
     width: 100%;
     height: auto;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    height: 45%;
+    video {
+      width: 110%;
+      height: auto;
+    }
   }
 `;
 
