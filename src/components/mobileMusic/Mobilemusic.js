@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import MusicComponent from '../music/MusicConponent';
 
 //kanabon
 import kanabon from "../../asset/music/kanavon.png";
@@ -100,7 +99,7 @@ height: 100vh;
 function Mobilemusic() {
   return (
     <Container>
-        
+        {songs.title}
     </Container>
   )
 }
