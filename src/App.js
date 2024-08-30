@@ -67,7 +67,7 @@ function App() {
       <GlobalStyle />
       {/* <Header /> */}
       <Music />
-      <Mobilemusic/>
+      {/* <Mobilemusic/> */}
       <Detection />
       <Demo />
       <Healthcare />
