@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import MusicComponent from "./music/MusicConponent";
 import gra from "../asset/gradation.png";
+
 //kanabon
 import kanabon from "../asset/music/kanavon.png";
 import imissyouKanavon from "../asset/music/kanavon/카나본 AI -I MISS YOU( 원곡_서지원).mp3";
 import heyKanavon from "../asset/music/kanavon/카나본 AI - Hey Hey Hey( 원곡_김윤아).mp3";
 import namKanavon from "../asset/music/kanavon/카나본 AI - 잘못된 만남 ( 원곡_김건모 ).mp3";
+
 //jiwon
 import jiwon from "../asset/music/jiwon.png";
 import sorryJiwon from "../asset/music/jiwon/서지원 AI _ 미안해 널 미워해 ( 김윤아 ).mp3";
@@ -18,6 +20,7 @@ import kunmo from "../asset/music/kunmo.png";
 import nightKunmo from "../asset/music/kunmo/김건모 AI_ 깊은 밤을 날아서 ( 이문세 ).mp3";
 import heyKunmo from "../asset/music/kunmo/김건모  AI - Hey Hey Hey (원곡_ 김윤아).mp3";
 import imissyouKunmo from "../asset/music/kunmo/김건모 AI -I MISS YOU(원곡_서지원).mp3";
+
 //songimg
 import simg1 from "../asset/music/song1.png";
 import simg2 from "../asset/music/song2.png";
@@ -42,6 +45,9 @@ const Container = styled.div`
     font-weight: 900;
     color: #222;
     z-index: 0;
+  }
+      @media (max-width: 600px) {
+      display:none
   }
 `;
 
@@ -99,7 +105,7 @@ const NavButton = styled.button`
   border: none;
   font-size: 16px;
   cursor: pointer;
-  z-index: 4;
+  z-index: 0;
   &:hover {
     color: #ff723a;
   }
@@ -262,6 +268,7 @@ const Music = () => {
       </PrevButton>
       <NextButton onClick={handleNextClick}>
         {/* NEXT */}
+      
         {/* <FontAwesomeIcon icon={faChevronDown} /> */}
       </NextButton>
     </Container>

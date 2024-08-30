@@ -1,22 +1,29 @@
 export const data = [
   {
     id: 1,
-    title: "1",
+    title: "Lucy",
+    src: "https://i.ibb.co/9VkQLtS/Group-78.png",
+    url: "https://www.braindeck.net/wp-content/uploads/2024/08/%EB%A3%A8%EC%8B%9C5-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%98%81%EC%83%81-1.mp4",
+  },
+    {
+    id: 6,
+    title: "이선균 목소리",
+    src: "https://i.ibb.co/fF1SL8q/2024-08-27-164513.png",
+    url: "https://www.braindeck.net/wp-content/uploads/2024/08/%EA%B8%B0%EC%83%9D%EC%B6%A9_Ai-Dubbing_1080p.mp4",
+  },
+  {
+    id:2,
+    title: "2",
     src: "https://i.ytimg.com/vi/VOh3_l5yEoo/maxresdefault.jpg",
     url: "https://www.braindeck.net/wp-content/uploads/2024/08/Realvoice-AI%EA%B0%80-%EB%85%B8%EB%9E%98%EB%A5%BC-%EB%B6%80%EB%A5%B8%EB%8B%A4%EA%B3%A0_-%EC%95%84%EB%8B%88.-%EC%97%AC%EA%B8%B0%EC%97%90-AI%EA%B0%80-%EC%9E%88%EB%8B%A4%EA%B3%A0_.mp4",
   },
   {
-    id: 2,
-    title: "2",
+    id: 3,
+    title: "3",
     src: "https://cdn.nbnnews.co.kr/news/photo/202209/704402_704559_2313.jpg",
     url: "https://www.braindeck.net/wp-content/uploads/2024/08/XR-Concert-COLORS-%EC%97%90%EC%9D%BC%EB%A6%AC-%EB%B3%B4%EC%97%AC%EC%A4%84%EA%B2%8C-2.mp4",
   },
-  {
-    id: 6,
-    title: "6",
-    src: "https://i.ibb.co/fF1SL8q/2024-08-27-164513.png",
-    url: "https://www.braindeck.net/wp-content/uploads/2024/08/%EA%B8%B0%EC%83%9D%EC%B6%A9_Ai-Dubbing_1080p.mp4",
-  },
+
   {
     id: 7,
     title: "7",

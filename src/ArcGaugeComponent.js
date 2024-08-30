@@ -12,6 +12,10 @@ const GaugeWrapper = styled.div`
   width: ${({ width }) => width || "40vw"}; /* 기본값 40vw */
   height: ${({ height }) => height || "40vw"}; /* 기본값 40vw */
   position: relative;
+  @media (max-width: 600px) {
+    width: 80vw;
+    height: 50vh; 
+  }
 `;
 
 const ArcGaugeComponent = ({ value, width, height }) => {
@@ -19,6 +23,20 @@ const ArcGaugeComponent = ({ value, width, height }) => {
     value: value,
     colors,
   };
+
+  const Percent = styled.h3`
+    margin-top: 50px;
+    @media (max-width: 600px) {
+      margin-top: 20px; /* 모바일에서는 여백 제거 */
+    }
+  `;
+  
+  const Result = styled.h3`
+    margin-top: 20px;
+    @media (max-width: 600px) {
+      margin-top: 10px; /* 모바일에서는 여백 조정 */
+    }
+  `;
 
   const arcCenterRenderer = (value) => (
     <div
@@ -32,20 +50,12 @@ const ArcGaugeComponent = ({ value, width, height }) => {
         textAlign: "center",
       }}
     >
-      <h3
-        style={{
-          marginTop: "50px",
-        }}
-      >
+      <Percent>
         {value}%
-      </h3>
-      <h2
-        style={{
-          marginTop: "50px",
-        }}
-      >
+      </Percent>
+      <Result>
         {value >= 50 ? "Fake" : "Real"}
-      </h2>
+      </Result>
     </div>
   );
 

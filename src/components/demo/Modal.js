@@ -29,11 +29,12 @@ const ModalContent = styled.div`
     height: auto;
   }
   @media (max-width: 600px) {
-    width: 100%;
-    height: 45%;
+        width: 100%;
+    height: 55%;
     video {
       width: 110%;
       height: auto;
+      max-height: 90%;
     }
   }
 `;

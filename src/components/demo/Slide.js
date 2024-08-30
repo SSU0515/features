@@ -13,7 +13,8 @@ const BoxBase = styled(motion.div)`
   text-align: left;
   width: ${(props) => (props.size === "large" ? "25vw" : "15vw")};
   height: ${(props) => (props.size === "large" ? "25vw" : "15vw")};
-  z-index: 10; /* 슬라이드의 z-index를 10으로 설정하여 모달 아래에 위치하도록 합니다 */
+  z-index:${(props)=> (props.size ===  "large" ? "7" : "0")};
+
 
   ${(props) =>
     props.size !== "large" &&
@@ -38,11 +39,11 @@ const BoxBase = styled(motion.div)`
       }
     `};
   @media (max-width: 600px) {
-    top: 10%;
-    left: 50%;
-    margin-left: 50%;
-    width: ${(props) => (props.size === "large" ? "70vw" : "55vw")};
-    height: ${(props) => (props.size === "large" ? "70vw" : "55vw")};
+    top: 50;
+    margin-left: 0;
+    width: ${(props) => (props.size === "large" ? "100vw" : "55vw")};
+    height: ${(props) => (props.size === "large" ? "100vw" : "55vw")};
+    
   }
 `;
 

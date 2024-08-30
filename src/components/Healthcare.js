@@ -20,7 +20,10 @@ const BgTitle = styled.h3`
   color: #222;
   z-index: 0;
   @media (max-width: 600px) {
-    font-size: 40vw;
+    font-size: 30vw;
+    font-weight: 900;
+    top: 0;
+    z-index: 0;
   }
 `;
 
@@ -29,8 +32,11 @@ const Title = styled.h2`
   top: 180px;
   left: 150px;
   font-size: 30px;
-
   z-index: 4;
+  @media (max-width: 600px) {
+    top: 80px;
+    left: 20px;
+  }
 `;
 
 const VideoBox = styled.div`
@@ -43,8 +49,11 @@ const VideoBox = styled.div`
     margin-top: 20px;
   }
   @media (max-width: 600px) {
-    width: 100vw;
+    width: 50vw;
     margin-bottom: 20px;
+    video{
+      width: 100%;
+    }
   }
 `;
 
@@ -55,7 +64,7 @@ const Box = styled.div`
   @media (max-width: 600px) {
     width: 100vw;
     flex-direction: column;
-    padding-left: 50%;
+  padding-top: 20%;
   }
 `;
 

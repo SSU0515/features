@@ -9,12 +9,16 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   color: #fff;
+
 `;
 
 const ContentBox = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   margin: 0 auto;
+  border-radius: 100%;
+  @media (max-width: 600px) {
+  }
 `;
 
 const ButtonBox = styled.div`
@@ -27,7 +31,9 @@ const ButtonBox = styled.div`
   padding-top: 20px;
   a {
     text-align: end;
+
   }
+  z-index: 0;
 `;
 
 // const ModalBtn = styled.button`
@@ -48,8 +54,9 @@ const ImageWrapper = styled.div`
   margin: 0 auto;
   border-radius: 100%;
   @media (max-width: 600px) {
-    width: ${(props) => (props.size === "large" ? "70vw" : "55vw")};
-    height: ${(props) => (props.size === "large" ? "70vw" : "55vw")};
+    width: ${(props) => (props.size === "large" ? "100vw" : "55vw")};
+    height: ${(props) => (props.size === "large" ? "100vw" : "55vw")};
+
   }
 `;
 

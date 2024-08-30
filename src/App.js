@@ -6,6 +6,7 @@ import Music from "./components/Music";
 import Detection from "./components/Detection";
 import Demo from "./components/Demo";
 import Healthcare from "./components/Healthcare";
+import Mobilemusic from "./components/mobileMusic/Mobilemusic";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -29,16 +30,21 @@ const GlobalStyle = createGlobalStyle`
   
   body{
     font-family: "Noto Sans", sans-serif;
-    background-color: #131528;
+    background-color: #000;
   }
 `;
 
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #110f0f;
+  background-color: #000;
   overflow-x: hidden;
   min-width: 1280px;
+  @media (max-width: 600px) {
+    min-width: 500px;
+    width: 100vw;
+    height: 100vh;
+  }
 `;
 
 const PostsContainer = styled.div`
@@ -61,6 +67,7 @@ function App() {
       <GlobalStyle />
       {/* <Header /> */}
       <Music />
+      <Mobilemusic/>
       <Detection />
       <Demo />
       <Healthcare />

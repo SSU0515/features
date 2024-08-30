@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { useDropzone } from "react-dropzone";
 import lucy5 from "../asset/lucy5.png";
-import ArcGaugeComponent from "../ArcGaugeComponent"; // ArcGaugeComponent 임포트
+import ArcGaugeComponent from "../ArcGaugeComponent"; 
 
 const Container = styled.div`
   width: 100%;
@@ -10,7 +10,7 @@ const Container = styled.div`
   color: #fff;
   position: relative;
   @media (max-width: 600px) {
-    height: 100vh;
+    height: 80vh;
   }
 `;
 
@@ -23,7 +23,10 @@ const BgTitle = styled.h3`
   color: #222;
   z-index: 0;
   @media (max-width: 600px) {
-    font-size: 40vw;
+    font-size: 30vw;
+    font-weight: 900;
+    top: 0;
+    z-index: 0;
   }
 `;
 
@@ -33,6 +36,10 @@ const Title = styled.h2`
   left: 150px;
   font-size: 30px;
   z-index: 4;
+  @media (max-width: 600px) {
+    top: 80px;
+    left: 20px;
+  }
 `;
 const Veta = styled.h3`
   position: absolute;
@@ -41,6 +48,11 @@ const Veta = styled.h3`
   font-size: 14px;
   z-index: 4;
   color: #555;
+  @media (max-width: 600px) {
+    top: 130px;
+    left: 20px;
+   font-size: 12px;
+  }
 `;
 
 const Lucy = styled.img`
@@ -53,6 +65,8 @@ const Lucy = styled.img`
   @media (max-width: 600px) {
     width: 80vw;
     top: -40vw;
+    left: 70vw;
+    z-index: 1;
   }
 `;
 
@@ -73,6 +87,15 @@ const DropzoneArea = styled.div`
   span {
     margin-top: 80px;
   }
+  @media (max-width: 600px) {
+    bottom: 10%;
+    left: 35%;
+    font-size: 3vw;
+    span {
+    margin-top: 80px;
+    padding-left: 10%;
+  }
+  }
 `;
 
 const LoadingContainer = styled.div`
@@ -85,6 +108,10 @@ const LoadingContainer = styled.div`
   align-items: center;
   justify-content: center; /* 중앙 정렬 */
   text-align: center; /* 텍스트 중앙 정렬 */
+  @media (max-width: 600px) {
+    left: 54%;
+    top: -41vh;
+  }
 `;
 
 const LoadingText = styled.p`
@@ -93,6 +120,7 @@ const LoadingText = styled.p`
   color: #fff;
   @media (max-width: 600px) {
     font-size: 14px;
+    margin-top: 30px;
   }
 `;
 
@@ -106,7 +134,8 @@ const GaugeContainer = styled.div`
   justify-content: center; /* 중앙 정렬 */
   text-align: center; /* 텍스트 중앙 정렬 */
   @media (max-width: 600px) {
-    bottom: 15vh;
+    left: 54%;
+    top: -50vh;
   }
 `;
 const GaugeText = styled.div`
@@ -119,9 +148,12 @@ const GaugeText = styled.div`
   justify-content: space-between;
   color: #ff723a;
   @media (max-width: 600px) {
-    width: 100vw;
-    bottom: -12vh;
-    right: -26vw;
+    width: 85vw;
+    left: -3%;
+    top: 50vh;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 ;
   }
 `;
 const Detection = () => {
@@ -176,7 +208,7 @@ const Detection = () => {
       <BgTitle>AI Voice Detection</BgTitle>
       <Title>AI Voice Detection</Title>
       <Veta>
-        정해진 파일명에만 반응하는 Beta 버전입니다. 실제 모델 출시는 11월
+        정해진 파일명에만 반응하는 Beta 버전입니다. <br/>실제 모델 출시는 11월
         예정입니다.
       </Veta>
       <DropzoneArea {...getRootProps()}>

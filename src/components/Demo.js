@@ -26,7 +26,9 @@ const BgTitle = styled.h3`
   color: #222;
   z-index: 0;
   @media (max-width: 600px) {
-    font-size: 40vw;
+    font-size: 30vw;
+    font-weight: 900;
+    top: 15px;
   }
 `;
 
@@ -36,6 +38,12 @@ const Title = styled.h2`
   left: 150px;
   font-size: 30px;
   z-index: 4;
+  @media (max-width: 600px) {
+    font-size: 30px;
+    font-weight: 900;
+    top: 10vh;
+    left: 20px;
+  }
 `;
 
 const BoxContainer = styled.div`
@@ -48,9 +56,10 @@ const BoxContainer = styled.div`
   top: 35%;
   left: 0;
   @media (max-width: 600px) {
-    height: 100vh;
-    width: 50%;
-    left: 2%;
+    height:50vh;
+    width: 100vw;
+    left: -35vw;
+    top: 20vh;
   }
 `;
 
@@ -64,10 +73,9 @@ const Buttons = styled.div`
   align-items: center;
   z-index: 0;
   @media (max-width: 600px) {
-    left: 52%;
-    top: 60%;
-    transform: translate(-25%);
-    width: 80vw;
+    left:-10vw;
+    top: 30%;
+    width: 120vw;
     z-index: 7;
   }
 `;
@@ -76,10 +84,17 @@ const Button = styled.button`
   border: none;
   background: none;
   color: #666;
-  font-size: 30px;
+  font-size: 120px;
   cursor: pointer;
   &:hover {
     color: #ff723a;
+  }
+  @media (max-width: 600px) {
+    color: transparent;
+    &:hover {
+      color: transparent;
+
+  }
   }
 `;
 
@@ -108,6 +123,8 @@ const boxVariants = {
 };
 
 function Demo() {
+  const isMobile = window.innerWidth <= 600;
+
   const [back, setBack] = useState(false);
   const [visible, setVisible] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
@@ -148,9 +165,10 @@ function Demo() {
               img={data[prevIndex].src}
               variants={boxVariants}
               custom={back}
-              position="3vw"
+              position={isMobile ? "10%" : "3vw"} 
               size="small"
               imgsize="small"
+              isMobile={isMobile}
               onClick={() => openModal(data[prevIndex].url)} // Open modal on click
             />
           )}
@@ -175,7 +193,7 @@ function Demo() {
               img={data[nextIndex].src}
               variants={boxVariants}
               custom={back}
-              position="calc(100% - 18vw)"
+              position={isMobile ? "calc(110% )" : "calc(100% - 18vw)"} 
               size="small"
               imgsize="small"
               onClick={() => openModal(data[nextIndex].url)} // Open modal on click
